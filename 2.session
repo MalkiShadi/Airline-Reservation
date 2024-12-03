@@ -1,0 +1,14 @@
+window_sizes 1366 715 318 1043 669 0
+
+diagrams
+  classdiagram_ref 128002 // Airline Diagram
+    1043 669 100 A4 0 0
+  usecasediagram_ref 128130 // usecase diagram
+    114 86 100 A4 0 0
+  active  sequencediagram_ref 134658 // sequence diagram
+    1043 669 100 A4 0 0
+end
+show_stereotypes
+selected 
+package_ref 129 // Airline Reservation
+end

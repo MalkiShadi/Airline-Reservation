@@ -1,0 +1,49 @@
+format 224
+
+subject 128002 ""
+  xyzwh 271 29 2000 200 475
+classcanvas 128130 class_ref 128514 // Passanger
+  simpleclassdiagramsettings end
+  xyz 71 121 2000
+end
+usecasecanvas 128258 usecase_ref 128002 // search flight
+  xyzwh 323 54 3005 64 32 label_xy 325 86
+end
+usecasecanvas 128386 usecase_ref 128130 // book flight
+  xyzwh 324 112 3005 64 32 label_xy 331 144
+end
+usecasecanvas 128514 usecase_ref 128258 // select seat
+  xyzwh 328 171 3005 64 32 label_xy 333 203
+end
+usecasecanvas 128642 usecase_ref 128386 // update passanger details
+  xyzwh 339 230 3005 64 32 label_xy 310 262
+end
+usecasecanvas 128770 usecase_ref 128514 // view ticket details
+  xyzwh 345 297 3005 64 32 label_xy 334 329
+end
+classcanvas 130178 class_ref 128642 // Booking_agent
+  simpleclassdiagramsettings end
+  xyz 605 348 2000
+end
+usecasecanvas 130306 usecase_ref 128642 // booking flight
+  xyzwh 361 383 3005 64 32 label_xy 361 415
+end
+usecasecanvas 130434 usecase_ref 128770 // selecting seat
+  xyzwh 358 440 3005 64 32 label_xy 356 472
+end
+line 129154 --->
+  from ref 128130 z 3006 to ref 128258
+line 129410 --->
+  from ref 128130 z 3006 to ref 128386
+line 129538 --->
+  from ref 128130 z 3006 to ref 128514
+line 129794 ---> decenter_end 437
+  from ref 128130 z 3006 to point 333 240
+  line 129922 z 3006 to ref 128642
+line 130050 --->
+  from ref 128130 z 3006 to ref 128770
+line 130562 --->
+  from ref 130178 z 3006 to ref 130306
+line 130690 ---> decenter_end 312
+  from ref 130178 z 3006 to ref 130434
+end
